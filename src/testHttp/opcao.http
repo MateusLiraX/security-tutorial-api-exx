@@ -1,0 +1,12 @@
+### Criar uma nova opção
+POST http://localhost:8080/opcoes
+Content-Type: application/json
+
+{
+  "descricao": "Brasília",
+  "isCorreta": true,
+  "questaoId": 1
+}
+
+### Deletar uma opção
+DELETE http://localhost:8080/opcoes/1

@@ -1,0 +1,17 @@
+### Listar todas as questões
+GET http://localhost:8080/questoes
+
+### Obter uma questão por ID
+GET http://localhost:8080/questoes/1
+
+### Criar uma nova questão
+POST http://localhost:8080/questoes
+Content-Type: application/json
+
+{
+  "enunciado": "Qual é a capital do Brasil?",
+  "categoriaId": 1
+}
+
+### Deletar uma questão
+DELETE http://localhost:8080/questoes/1
